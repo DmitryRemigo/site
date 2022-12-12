@@ -1,4 +1,5 @@
 
+
 const animItems = document.querySelectorAll('._anim');
 if (animItems.length > 0) {
 	window.addEventListener('scroll', animOnScroll);
@@ -34,20 +35,19 @@ function offset(el) {
 setTimeout(() => {
 animOnScroll();
 	},300);
-
-
 }
 
 
+$(function(){
+	$('.burger').click(function(event){
+		$('.wrappburger').toggleClass('activ');
+		$('.nav_center').toggleClass('activ');
+				$('.line_1').toggleClass('activ');
+				$('.line_2').toggleClass('activ');
+				$('.line_3').toggleClass('activ');
+	});
 
-
-
-
-
-
-
-
-
+});
 
 
 
