@@ -8,7 +8,7 @@ if (animItems.length > 0) {
 			const animItem = animItems [index];
 			const animItemHight = animItem.offsetHeight;
 			const animItemOffset = offset (animItem).top;
-			const animItemStart = 4;
+			const animItemStart = 9;
 
 
 			let animPoint = window.innerHeight - animItemHight / animItemStart;
@@ -46,12 +46,22 @@ $(function(){
 				$('.line_2').toggleClass('activ');
 				$('.line_3').toggleClass('activ');
 	});
-	$('.usl , .port , .novos , .cont').click(function(event){
+
+});
+
+$(function(){
+	$('.cont , .price').click(function(event){
+		$('.kontackt').toggleClass('activ');
+	});
+		$('.CLKont ').click(function(event){
+		$('.kontackt').removeClass('activ');
+	});
+		$('.usl , .port , .novos , .cont').click(function(event){
 		$('.wrappburger').removeClass('activ');
 		$('.nav_center').removeClass('activ');
-				$('.line_1').removeClass('activ');
-				$('.line_2').removeClass('activ');
-				$('.line_3').removeClass('activ');
+		$('.line_1').removeClass('activ');
+		$('.line_2').removeClass('activ');
+		$('.line_3').removeClass('activ');
 	});
 });
 
