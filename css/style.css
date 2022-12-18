@@ -378,7 +378,7 @@ a {
 }
 @media (max-width: 390px) {
   .block {
-    height: 180px;
+    height: 210px;
     background-position: 0px 100%;
     background-repeat: no-repeat;
   }
